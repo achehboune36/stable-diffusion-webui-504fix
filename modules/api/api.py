@@ -394,6 +394,7 @@ class Api:
             shared.state.end()
 
         b64images = list(map(encode_pil_to_base64, processed.images)) if send_images else []
+        shared.state.current_processed_images = b64images
 
         if not img2imgreq.include_init_images:
             img2imgreq.init_images = None
