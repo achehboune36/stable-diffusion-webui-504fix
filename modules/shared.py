@@ -113,6 +113,7 @@ class State:
     current_latent = None
     current_image = None
     current_image_sampling_step = 0
+    current_processed_images = None
     id_live_preview = 0
     textinfo = None
     time_start = None
@@ -195,6 +196,7 @@ class State:
         self.current_latent = None
         self.current_image = None
         self.current_image_sampling_step = 0
+        self.current_processed_images = None
         self.id_live_preview = 0
         self.skipped = False
         self.interrupted = False
